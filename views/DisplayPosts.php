@@ -22,6 +22,19 @@
       <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
       Tiny Social Network
     </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <form class="nav-link" method="get">
+          <input name="search" type="text"></input>
+        </form>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?action=login" role="button">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="?action=register" role="button">Sign Up</a>
+      </li>
+    </ul>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -104,6 +117,7 @@
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
