@@ -28,12 +28,24 @@
           <input name="search" type="text"></input>
         </form>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="?action=login" role="button">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="?action=register" role="button">Sign Up</a>
-      </li>
+      <?php
+      if (isset($_SESSION['userId'])) {
+      ?>
+        <li class="nav-item">
+          <a class="nav-link" href="?action=logout" role="button">Logout</a>
+        </li>
+      <?php
+      } else {
+      ?>
+        <li class="nav-item">
+          <a class="nav-link" href="?action=login" role="button">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?action=register" role="button">Sign Up</a>
+        </li>
+      <?php
+      }
+      ?>
     </ul>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
